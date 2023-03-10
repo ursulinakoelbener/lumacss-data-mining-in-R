@@ -12,7 +12,7 @@ Lecturer: Dr. Andrea De Angelis (University of Zurich)
     * statistical analysis: analyse the data and find new insights
     * output: communicate the information
 
-### Elements of Data Mining
+**Elements of Data Mining**
 * Technologies for dissemating content on the web
 * **Technologies for information extraction**
 * Technologies for data storage
@@ -25,8 +25,6 @@ Lecturer: Dr. Andrea De Angelis (University of Zurich)
 * reproducible code happens in scripts.
 
 ### R Data Structure
-There are two types of vectors: atomic, list
-
 Dimension | Single Type (homogeneous) | Multiple Types (heterogeneous) 
 ----------|-------------------------|-----------------------------
 1D        | Vector                  | List 
@@ -34,6 +32,16 @@ Dimension | Single Type (homogeneous) | Multiple Types (heterogeneous)
 nD        | Array                   |  
 
 A "tibble" is also a data frame, but from the tidyverse package set, which shows the data type as well.
+
+### Vectors
+There are two types of vectors: atomic, list  
+A vector in R is either an atomic vector or of type mode list or expression.
+The atomic modes are "logical", "integer", "numeric" (synonym "double"), "complex", "character" and "raw".
+
+**Subsetting**  
+1. '[]' use for atomic vectors and list
+2. '[[]]' use for atomic vectors and list
+3. '$' only use for  list
 
 ## Web Scraping
 * A regular expression is a sequence of characters that specifies a match pattern in text.
