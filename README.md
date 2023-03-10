@@ -17,11 +17,23 @@ Lecturer: Dr. Andrea De Angelis (University of Zurich)
 * **Technologies for information extraction**
 * Technologies for data storage
 
-### Basics in R
+### Basics in R / Good-Enough-Practice
 * the pipe makes the code more readable.
 * use a project oriented workflow.
 * use folders to create a structure and good names for files. The name gives an idea about what the code will do.
 * avoid point-and-click.
+* reproducible code happens in scripts.
+
+### R Data Structure
+There are two types of vectors: atomic, list
+
+Dimension | Single Type (homogeneous) | Multiple Types (heterogeneous) 
+----------|-------------------------|-----------------------------
+1D        | Vector                  | List 
+2D        | Matrix                  | Data frame 
+nD        | Array                   |  
+
+A "tibble" is also a data frame, but from the tidyverse package set, which shows the data type as well.
 
 ## Web Scraping
 * A regular expression is a sequence of characters that specifies a match pattern in text.
