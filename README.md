@@ -39,8 +39,8 @@ A vector in R is either an atomic vector or of type mode list or expression.
 The atomic modes are "logical", "integer", "numeric" (synonym "double"), "complex", "character" and "raw".
 
 **Subsetting**  
-1. '[]' use for atomic vectors and list
-2. '[[]]' use for atomic vectors and list
+1. '[]' use for atomic vectors and list > data frame
+2. '[[]]' use for atomic vectors and list > atomic vector
 3. '$' only use for  list
 
 ## Web Scraping
