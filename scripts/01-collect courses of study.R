@@ -1,6 +1,5 @@
-# install packages
-install.packages("rvest")
-install.packages("tidyverse")
+# install.packages("rvest")
+# install.packages("tidyverse")
 
 # load packages
 library(rvest)
