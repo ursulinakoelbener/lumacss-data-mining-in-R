@@ -3,8 +3,6 @@
 # load packages
 library(tidyverse)
 
-View(mpg)
-
 # Meeting the Pipe ----
 
 # select to only keeping columns
