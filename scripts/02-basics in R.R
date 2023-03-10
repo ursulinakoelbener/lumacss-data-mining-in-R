@@ -15,6 +15,10 @@ mpg_rec <- mpg %>%
 mpg_1999 <- mpg %>% 
   filter(year == 1999)
 
+# filter rows with a condition
+mpg_200 <- mpg %>% 
+  filter(year == 2000)
+
 # Working Directory ----
 
 # get working directory
