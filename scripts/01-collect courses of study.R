@@ -10,6 +10,6 @@ library(tidyverse)
 url <- "https://www.unilu.ch/studium/studienangebot/master/kultur-und-sozialwissenschaftliche-fakultaet/"
 
 # extract courses of study
-courses <- read_html(url) %>%
+read_html(url) %>%
   html_elements(css = ".text") %>% 
   html_text()
