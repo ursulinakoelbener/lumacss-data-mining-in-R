@@ -43,7 +43,55 @@ The atomic modes are "logical", "integer", "numeric" (synonym "double"), "comple
 2. '[[]]' use for atomic vectors and list > atomic vector
 3. '$' only use for  list
 
+### Basics Report
+General Structure: IMRaD (Introduction, Methods, Result and Discussion)
+
 ## Web Scraping
+* *scraping* the internet means saving the information somewhere.
+* compared to *browsing* the internet, it is more structured.
+* Interaction between a client and a server - automated and scalable.
+* Selecting only information needed.
+* Interacting directly with the server (no browser needed).
+
+**Data Extraction Technologies**
+Technology        | languages               | R packages   | comment
+------------------|-------------------------|--------------|----------------------------------
+Screen Scraping   |  HTML, XML, CSS, XPath   | R > rvest   | do it politely, only if no other way is available
+Web APIs          |  JSON, XML              | R > httr     | use it if you find one
+
+**Linkely Scenarios**
+Text in Tables > Copy & past
+Static Website >
+Dynamic Website > RSelenium
+
+### Scraping Workflow
+1. Source idenfification & download
+2. parsing
+3. inspect and understand DOM (Document Object Model) structure
+4. extracting
+5. prototype code (select and test)
+6. refining
+7. generalize and loop
+8. tidying
+9. tidy data
+
+**Parsing**
+* a parser is a software that takes some text data and builds a parse tree > queryable DOM (Document Object Model)
+
+**Process**
+1. check the robots file of the website with 'browseURL(robots.txt)'. It tells the robots/scraper what we can scrape and what not.
+2. Download the Site with 'download.file()' to store it locally.
+3. 'rvest::read_html()' parse
+4. 'rvest::html_elemnts()' take only what you need
+
+There are differnet type of selecors to extract elemnts
+* CSS
+* XPath
+
+### Scraping Tools
+
+
+### 
 * A regular expression is a sequence of characters that specifies a match pattern in text.
 
 ## APIs
