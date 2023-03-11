@@ -56,7 +56,7 @@ General Structure: IMRaD (Introduction, Methods, Result and Discussion)
 **Data Extraction Technologies**
 Technology        | languages               | R packages   | comment
 ------------------|-------------------------|--------------|----------------------------------
-Screen Scraping   |  HTML, XML, CSS, XPath   | R > rvest   | do it politely, only if no other way is available
+Screen Scraping   |  HTML, XML, CSS, XPath  | R > rvest    | do it politely, only if no other way is available
 Web APIs          |  JSON, XML              | R > httr     | use it if you find one
 
 **Linkely Scenarios**
@@ -76,7 +76,7 @@ Dynamic Website > RSelenium
 9. tidy data
 
 **Parsing**
-* a parser is a software that takes some text data and builds a parse tree > queryable DOM (Document Object Model)
+A parser is a software that takes some text data and builds a parse tree > queryable DOM (Document Object Model)
 
 **Process**
 1. check the robots file of the website with 'browseURL(robots.txt)'. It tells the robots/scraper what we can scrape and what not.
@@ -89,7 +89,20 @@ There are differnet type of selecors to extract elemnts
 * XPath
 
 ### Scraping Tools
+* *rvest* is a R packages, it is compatible with tidyverse.
+* *SelectorGadget* helps examine the HTML
 
+**rvest**
+'url  %>%' 
+'read_html()  %>%' 
+'html_elemnets(selector)  %>%' 
+'html_text()'
+
+*scrape politely*
+* aks permission inspection the host's/robot.txt file
+* take slowly: Sys.sleep(2) in loops
+* download to never ask twice: donwload.file
+* disclosing your identity is polite
 
 ### 
 * A regular expression is a sequence of characters that specifies a match pattern in text.
