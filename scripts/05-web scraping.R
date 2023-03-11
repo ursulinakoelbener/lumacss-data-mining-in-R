@@ -32,3 +32,24 @@ read_html(nzz, encoding = "ISO-8859-1") %>%
   html_text()
 
 Sys.getlocale()
+
+# Politely scrape
+# install.packages("httr")
+library(httr)
+
+page <- GET(nzz,
+    add_headers(
+      From = "ursulina.koelbener@stud.unilu.ch",
+      `User-Agent` = user_agent)
+    )
+
+bin <- content(page, as = "raw")
+writeBin <- object = bin(con = "NZZ.html")
+
+session <- html_session(nzz,
+                        add_headers(
+                          From = "ursulina.koelbener@stud.unilu.ch",
+                          `User-Agent` = user_agent))
+text <- session %>% 
+  html_elements(css = ".teaser__title-name") %>% 
+  html_text()
