@@ -39,9 +39,9 @@ A vector in R is either an atomic vector or of type mode list or expression.
 The atomic modes are "logical", "integer", "numeric" (synonym "double"), "complex", "character" and "raw".
 
 **Subsetting**  
-1. '[]' use for atomic vectors and list > data frame
-2. '[[]]' use for atomic vectors and list > atomic vector
-3. '$' only use for  list
+1. `[]` use for atomic vectors and list > data frame
+2. `[[]]` use for atomic vectors and list > atomic vector
+3. `$` only use for  list
 
 ### Basics Report
 General Structure: IMRaD (Introduction, Methods, Result and Discussion)
@@ -79,10 +79,10 @@ Dynamic Website > RSelenium
 A parser is a software that takes some text data and builds a parse tree > queryable DOM (Document Object Model)
 
 **Process**
-1. check the robots file of the website with 'browseURL(robots.txt)'. It tells the robots/scraper what we can scrape and what not.
-2. Download the Site with 'download.file()' to store it locally.
-3. 'rvest::read_html()' parse
-4. 'rvest::html_elemnts()' take only what you need
+1. check the robots file of the website with `browseURL(robots.txt)`. It tells the robots/scraper what we can scrape and what not.
+2. Download the Site with `download.file()` to store it locally.
+3. `rvest::read_html()` parse
+4. `rvest::html_elemnts()` take only what you need
 
 There are differnet type of selecors to extract elemnts
 * CSS
@@ -93,15 +93,15 @@ There are differnet type of selecors to extract elemnts
 * *SelectorGadget* helps examine the HTML
 
 **rvest**  
-'url  %>%'   
-'read_html()  %>%'   
-'html_elemnets(selector)  %>%'   
-'html_text()'  
+`url  %>%`   
+`read_html()  %>%`  
+`html_elemnets(selector)  %>%`   
+`html_text()` 
 
 **scrape politely**
 * aks permission inspection the host's/robot.txt file
-* take slowly: Sys.sleep(2) in loops
-* download to never ask twice: donwload.file
+* take slowly: `Sys.sleep(2)` in loops
+* download to never ask twice: `donwload.file()`
 * disclosing your identity is polite
 
 ### 
