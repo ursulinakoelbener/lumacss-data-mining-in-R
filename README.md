@@ -59,10 +59,10 @@ Technology        | languages               | R packages   | comment
 Screen Scraping   |  HTML, XML, CSS, XPath  | R > rvest    | do it politely, only if no other way is available
 Web APIs          |  JSON, XML              | R > httr     | use it if you find one
 
-**Linkely Scenarios**
-Text in Tables > Copy & past
-Static Website >
-Dynamic Website > RSelenium
+**Linkely Scenarios**  
+Text in Tables > Copy & past  
+Static Website >  
+Dynamic Website > RSelenium  
 
 ### Scraping Workflow
 1. Source idenfification & download
@@ -75,7 +75,7 @@ Dynamic Website > RSelenium
 8. tidying
 9. tidy data
 
-**Parsing**
+**Parsing**  
 A parser is a software that takes some text data and builds a parse tree > queryable DOM (Document Object Model)
 
 **Process**
@@ -92,13 +92,13 @@ There are differnet type of selecors to extract elemnts
 * *rvest* is a R packages, it is compatible with tidyverse.
 * *SelectorGadget* helps examine the HTML
 
-**rvest**
-'url  %>%' 
-'read_html()  %>%' 
-'html_elemnets(selector)  %>%' 
-'html_text()'
+**rvest**  
+'url  %>%'   
+'read_html()  %>%'   
+'html_elemnets(selector)  %>%'   
+'html_text()'  
 
-*scrape politely*
+**scrape politely**
 * aks permission inspection the host's/robot.txt file
 * take slowly: Sys.sleep(2) in loops
 * download to never ask twice: donwload.file
