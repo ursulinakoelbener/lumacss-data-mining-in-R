@@ -12,4 +12,3 @@ for(i in 1:length(simpsons)) {
   list[i] <- (simpsons[[i]]["title"])
   # Sys.sleep(1)
 }
-
