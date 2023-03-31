@@ -104,8 +104,30 @@ There are differnet type of selecors to extract elemnts
 * download - to never ask twice: `donwload.file()`
 * disclosing your identity is polite
 
-### Tipps
+**Tipps**
 * A regular expression is a sequence of characters that specifies a match pattern in text.
+
+### HTML & XML
+* XML is better structured than HTML
+* CSS selector is easier than XPath selector (for XML we need XPath)
+
+HTML ----------------------|XML------|
+---------------------------|----------|
+* **H**yper **T**ext **M**arkup **L**anguage 	| * e**X**tensible **M**arkup **L**anguage
+* <tags> and text </tags>   	|* <tags> and text </tags>
+* used to create webpages   	|* used to store/share data
+* predefined standards (W3C)  | * no predefined tag standard
+* new elements not possible 	| * new elemnts possible
+
+**Navigating XML**
+* 
+
+**Tipps**
+* Use `XML2` package in R
+
+### CSS & XPath
+
+### HTTP protocol
 
 ## APIs
 
