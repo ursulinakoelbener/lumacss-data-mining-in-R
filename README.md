@@ -117,7 +117,7 @@ HTML 						|XML					|
 <tags> and text </tags>   	|<tags> and text </tags>
 used to create webpages   	|used to store/share data
 predefined standards (W3C)  | no predefined tag standard
-new elements not possible 	| new elemnts possible
+new elements not possible 	| new elements possible
 
 **Navigating XML**
 * root node
@@ -151,6 +151,23 @@ new elements not possible 	| new elemnts possible
 
 1. Client Request > Web Server (GET-Method)
 2. Server Response > Client
+
+**HTTP Request**
+* Status line
+* Headers
+* Body
+
+**HTTP Response**
+* Status line `http_status(resp)`; `r$status_code`
+
+**Text and Computers**
+* printed strings use an output encoding.
+* "UTF-8" is the best encoding, convert with `iconv`
+
+**XML and JSON**
+* JSON is leaner than XML, is smaller
+* **J**ava **S**cript **O**bject **N**otation
+* uses a pair of *values* and *keys*
 
 ## APIs
 
