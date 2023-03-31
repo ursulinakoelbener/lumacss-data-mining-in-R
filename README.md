@@ -99,9 +99,9 @@ There are differnet type of selecors to extract elemnts
 `html_text()` 
 
 **scrape politely**
-* aks permission inspection the host's/robot.txt file
-* take slowly: `Sys.sleep(2)` in loops
-* download to never ask twice: `donwload.file()`
+* ask permission inspection the host's/robot.txt file
+* scrape slowly: `Sys.sleep(2)` in loops
+* download - to never ask twice: `donwload.file()`
 * disclosing your identity is polite
 
 ### Tipps
