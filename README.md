@@ -111,13 +111,13 @@ There are differnet type of selecors to extract elemnts
 * XML is better structured than HTML
 * CSS selector is easier than XPath selector (for XML we need XPath)
 
-HTML ----------------------|XML------|
----------------------------|----------|
-* **H**yper **T**ext **M**arkup **L**anguage 	| * e**X**tensible **M**arkup **L**anguage
-* <tags> and text </tags>   	|* <tags> and text </tags>
-* used to create webpages   	|* used to store/share data
-* predefined standards (W3C)  | * no predefined tag standard
-* new elements not possible 	| * new elemnts possible
+HTML 						|XML					|
+---------------------------|------------------------|
+**H**yper **T**ext **M**arkup **L**anguage 	| e**X**tensible **M**arkup **L**anguage
+<tags> and text </tags>   	|<tags> and text </tags>
+used to create webpages   	|used to store/share data
+predefined standards (W3C)  | no predefined tag standard
+new elements not possible 	| new elemnts possible
 
 **Navigating XML**
 * root node
@@ -150,7 +150,7 @@ HTML ----------------------|XML------|
 * works with Uniform Resource Locators (URL), they have a scheme: `//hostname:80/path?querystring#fragment`
 
 1. Client Request > Web Server (GET-Method)
-2. Response
+2. Server Response > Client
 
 ## APIs
 
