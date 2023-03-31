@@ -104,7 +104,8 @@ There are differnet type of selecors to extract elemnts
 * download to never ask twice: `donwload.file()`
 * disclosing your identity is polite
 
-### 
+### Tipps
 * A regular expression is a sequence of characters that specifies a match pattern in text.
 
 ## APIs
+
