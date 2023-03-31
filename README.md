@@ -61,7 +61,7 @@ Web APIs          |  JSON, XML              | R > httr     | use it if you find 
 
 **Linkely Scenarios**  
 Text in Tables > Copy & past  
-Static Website >  
+Static Website > rvest
 Dynamic Website > RSelenium  
 
 ### Scraping Workflow
@@ -134,7 +134,15 @@ HTML ----------------------|XML------|
 
 **XPath Query Language**
 * a language to design queries
-* 
+* using paths to select nodes in the tree structure
+
+**XPath Syntax**
+`/` from the root
+`//` nodes everywhere
+`.` current node
+`..` the parent of the current node
+`@` attributes
+`[]` index
 
 ### HTTP protocol
 
