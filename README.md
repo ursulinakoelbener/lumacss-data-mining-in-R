@@ -169,7 +169,9 @@ new elements not possible 	| new elements possible
 **Regular Expression**
 * A regular expression is a sequence of characters that specifies a match pattern in text.
 * another proper language to identify, matching and replacing patterns in a string (text).
-* 
+* `^` start with
+* metacharacters help to identify special characters
+* `.` is used to match everything
 
 ## APIs
 
