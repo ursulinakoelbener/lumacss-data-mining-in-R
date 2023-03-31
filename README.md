@@ -145,6 +145,12 @@ HTML ----------------------|XML------|
 `[]` index
 
 ### HTTP protocol
+* foundational element of the internet
+* define communication between server and clients
+* works with Uniform Resource Locators (URL), they have a scheme: `//hostname:80/path?querystring#fragment`
+
+1. Client Request > Web Server (GET-Method)
+2. Response
 
 ## APIs
 
