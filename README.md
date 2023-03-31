@@ -104,9 +104,6 @@ There are differnet type of selecors to extract elemnts
 * download - to never ask twice: `donwload.file()`
 * disclosing your identity is polite
 
-**Tipps**
-* A regular expression is a sequence of characters that specifies a match pattern in text.
-
 ### HTML & XML
 * XML is better structured than HTML
 * CSS selector is easier than XPath selector (for XML we need XPath)
@@ -168,6 +165,11 @@ new elements not possible 	| new elements possible
 * JSON is leaner than XML, is smaller
 * **J**ava **S**cript **O**bject **N**otation
 * uses a pair of *values* and *keys*
+
+**Regular Expression**
+* A regular expression is a sequence of characters that specifies a match pattern in text.
+* another proper language to identify, matching and replacing patterns in a string (text).
+* 
 
 ## APIs
 
