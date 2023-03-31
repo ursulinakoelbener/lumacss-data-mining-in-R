@@ -120,12 +120,21 @@ HTML ----------------------|XML------|
 * new elements not possible 	| * new elemnts possible
 
 **Navigating XML**
-* 
+* root node
+* child nodes inside
 
 **Tipps**
 * Use `XML2` package in R
 
 ### CSS & XPath
+**Cascading Style Sheet (CSS)**
+* you can create a css template and use it for R Markdown files
+* makes HTML code looks pretty
+* CSS code can be stored into the HTML code or in external files
+
+**XPath Query Language**
+* a language to design queries
+* 
 
 ### HTTP protocol
 
