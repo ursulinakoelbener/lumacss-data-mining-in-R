@@ -27,3 +27,9 @@ str_view_all(z, pattern = ".")
 
 # matching a point
 str_view_all(z, pattern = "\\.")
+
+# create a string
+string <- str_c("file", 1:10, ".csv")
+
+# all files with the ending ".csv"
+str_view_all(string, pattern = "\\.csv$") # $ to match at the end

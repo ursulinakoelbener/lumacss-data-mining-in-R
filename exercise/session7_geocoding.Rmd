@@ -26,7 +26,6 @@ Install and load the `httr` and `jsonlite` packages.
 library(httr)
 library(jsonlite)
 
-
 ```
 
 # Sign up for a free OpenCage API key
@@ -56,7 +55,8 @@ Call the function `httr::GET()` with the `url` and `query` arguments. Tips: the 
 
 ```{r}
 
-geocoding_response <- httr::GET(base_url, query = list(key = api_key, q = address))
+geocoding_response <- httr::GET(base_url, 
+                                query = list(key = api_key, q = address))
 
 ```
 
@@ -74,7 +74,18 @@ Good luck!
 
 ```{r}
 
-jsonlite::fromJSON(geocoding_response)
+resp <- httr::content(geocoding_response)
+# jsonlite::fromJASON
+
+# structure
+str(resp, 1)
+
+str(resp$results)
+
+# acccess the results
+resp$results[[1]]$geometry$lat
+resp$results[[1]]$geometry$lan
+
 
 ```
 

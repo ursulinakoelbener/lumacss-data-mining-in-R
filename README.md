@@ -123,6 +123,11 @@ new elements not possible 	| new elements possible
 **Tipps**
 * Use `XML2` package in R
 
+**XML and JSON**
+* JSON is leaner than XML, is smaller
+* **J**ava **S**cript **O**bject **N**otation
+* uses a pair of *values* and *keys*
+
 ### CSS & XPath
 **Cascading Style Sheet (CSS)**
 * you can create a css template and use it for R Markdown files
@@ -161,17 +166,49 @@ new elements not possible 	| new elements possible
 * printed strings use an output encoding.
 * "UTF-8" is the best encoding, convert with `iconv`
 
-**XML and JSON**
-* JSON is leaner than XML, is smaller
-* **J**ava **S**cript **O**bject **N**otation
-* uses a pair of *values* and *keys*
-
 **Regular Expression**
 * A regular expression is a sequence of characters that specifies a match pattern in text.
 * another proper language to identify, matching and replacing patterns in a string (text).
 * `^` start with
 * metacharacters help to identify special characters
 * `.` is used to match everything
+* `$` match at the end
 
 ## APIs
+**Definition**
+* *APIs* specify how software components interact with each other
+* a *web API* specifies how client and server interact, typically via a set of HTTP request
+
+**API workflow**
+1. read documentation (endpoint)
+2. register for API use (get credentials)
+3. autenticate with OAuth
+4. call API and get data
+5. parse/process data
+
+* endpoint (url) defined how to interact wit the API.
+
+## Current Situation
+### Algorithm
+> *mathematical procedure* using a *data input* to find a *solution* to a problem.
+
+* algorithms *predict* an outcome, but they don't *explain*.
+* science works with a causal model and asks why?
+* algorithms are like a receipt
+
+* in machine learning the model generates the function
+
+**Digital Processes**
+* Digitization: technical process (from analog to digital information)
+* Digitalization: changes social life (business models, social interaction)
+* Digital Transformation: (E-Government, etc.)
+
+**The speed of change**
+* exponential change is an explosion
+* the speed of AI is doubling every 3 months (May 22)
+* chatGPT reached 1 Million users in one week. No social media ever reached that number.
+* a war of ai started, competition
+* chatGPT costed 600 Million Dollar
+
+
 
