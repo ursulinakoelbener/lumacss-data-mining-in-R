@@ -75,7 +75,7 @@ Good luck!
 ```{r}
 
 resp <- httr::content(geocoding_response)
-# jsonlite::fromJASON
+# jsonlite::fromJSON
 
 # structure
 str(resp, 1)

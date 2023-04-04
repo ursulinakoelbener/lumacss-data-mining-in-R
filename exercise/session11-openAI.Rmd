@@ -1,0 +1,64 @@
+---
+title: "OpenAI-API"
+author: "Andrea De Angelis"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(httr)
+
+# Authentication
+APIkey <- readLines("openai_key.txt")
+bearer <- str_c("Authorization: Bearer ", APIkey)
+
+```
+
+[Documentation link](https://beta.openai.com/docs/quickstart/introduction)
+
+
+# Completion endpoints
+
+[Completions](https://beta.openai.com/docs/api-reference/completions/create)
+You input some text as a prompt, and the API will return a text completion that attempts to match whatever instructions or context you gave it.
+
+```{r}
+r <- httr::POST(
+  url = "https://api.openai.com/v1/completions", 
+  content_type("application/json"), 
+  add_headers(Authorization = paste("Bearer", APIkey, sep = " ")), 
+  body = list(model = "text-davinci-003", 
+              prompt = "Say this is a test", 
+              temperature = 0, 
+              max_tokens = 7), encode = "json"
+  )
+
+content(r)
+```
+
+# Image generation (DALL-E)
+
+[Intro to image generation](https://beta.openai.com/docs/guides/images) 
+
+```{r}
+url <- "https://api.openai.com/v1/images/generations"
+
+r <- httr::POST(
+  url = url, 
+  content_type("application/json"), 
+  add_headers(Authorization = paste("Bearer", APIkey, sep = " ")), 
+  body = list(
+              prompt = "A bear surfing waves with an ice cream", 
+              n = 1,
+              size = "512x512"), encode = "json"
+  )
+
+http_status(r)
+
+browseURL(content(r)$data[[1]]$url)
+
+
+```
+

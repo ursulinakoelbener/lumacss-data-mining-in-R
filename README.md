@@ -188,8 +188,12 @@ new elements not possible 	| new elements possible
 
 * endpoint (url) defined how to interact wit the API.
 
-## Current Situation
-### Algorithm
+HTTP request					| API request
+----------------------------|----------------------------
+parameter are not documented 	| APIs are usually documented
+direct requests to specific URL | predefined endpoints and methods
+
+## Current Situation with Algorithms
 > *mathematical procedure* using a *data input* to find a *solution* to a problem.
 
 * algorithms *predict* an outcome, but they don't *explain*.
