@@ -17,3 +17,12 @@ xpathSApply(parsed_doc, "//p/i")
 # wildcard operator
 xpathSApply(doc = parsed_doc, path = "/html/body/div/*/i")
 
+# .. operator
+xpathSApply(doc = parsed_doc, path = "//title/..")
+
+# multiple paths
+xpathSApply(doc = parsed_doc, path = "//title | //address")
+
+# another method
+twoQueries <- c(address = "//address", title = "//title")
+xpathSApply(parsed_doc, twoQueries)
