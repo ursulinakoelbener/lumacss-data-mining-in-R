@@ -26,3 +26,12 @@ xpathSApply(doc = parsed_doc, path = "//title | //address")
 # another method
 twoQueries <- c(address = "//address", title = "//title")
 xpathSApply(parsed_doc, twoQueries)
+
+# ancestor node
+xpathSApply(parsed_doc, "//a/ancestor::div")
+
+# ancestor node
+xpathSApply(parsed_doc, "//a/ancestor::div//i")
+
+# preceding-sibling
+xpathSApply(parsed_doc, "//p/preceding-sibling::h1")
